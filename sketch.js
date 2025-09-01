@@ -1,27 +1,25 @@
 const trabajitos = [
     {
-        photo: "https://picsum.photos/id/237/400/300",
-        title: "Súper dibujo",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/dvina.webp",
+        title: "D'vina",
         description: "Trabajo de Configuración Visual I, con Prof. Ampuero."
     },
     {
-        photo: "https://picsum.photos/id/84/400/300",
-        title: "Mejor dibujo",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/cafetera.webp",
+        title: "Mandarine Coffee",
         description: "Trabajo de Configuración Visual I, con Prof. Perea."
     },
     {
-        photo: "https://picsum.photos/id/96/400/300",
-        title: "Otro dibujo",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/invasioninversa.webp",
+        title: "Invasión inversa",
         description: "Trabajo de Configuración Visual I, con Prof. Pradenas."
     },
     {
-        photo: "https://picsum.photos/id/104/400/300",
-        title: "Paremos de hacer dibujos",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/coralia.webp",
+        title: "Coralia",
         description: "Trabajo de Configuración Visual I, con Prof. Otro."
     }            
 ];
-
-
 
 const datos = [
     {
@@ -267,6 +265,8 @@ function setup() {
         document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
     });
 
+     document.querySelector("#autoria").innerHTML=yo.nombre;
+    
     //Ahora vuelvo al p5.js
     noStroke();
 }
@@ -281,12 +281,12 @@ function draw() {
 
     // Add shapes.
     push();
-    fill("red");
+    fill("purple");
     translate(0, -valor / 4, -valor / 7);
     sphere(valor / 4);
     pop();
     push();
-    fill("blue");
+    fill("purple");
     sphere(valor / 5);
     pop();
 }
