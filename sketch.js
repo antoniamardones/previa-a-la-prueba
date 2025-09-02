@@ -5,7 +5,7 @@ const trabajitos = [
         description: "Trabajo de Procesos y prototipos, con Prof. Pamela Fuentes",
     },
     {
-        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/cafetera.webp",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/cafetera2.webp",
         title: "Mandarine Coffee",
         description: "Trabajo de Proyecto II, con Prof. Paula Ron",
     },
