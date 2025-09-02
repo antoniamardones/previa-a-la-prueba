@@ -2,22 +2,22 @@ const trabajitos = [
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/dvina.webp",
         title: "D'vina",
-        description: "Trabajo de Configuración Visual I, con Prof. Ampuero."
+        description: "Trabajo de Procesos y prototipos, con Prof. Pamela Fuentes",
     },
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/cafetera.webp",
         title: "Mandarine Coffee",
-        description: "Trabajo de Configuración Visual I, con Prof. Perea."
+        description: "Trabajo de Proyecto II, con Prof. Paula Ron",
     },
      {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
         title: "Invasión inversa",
-        description: "Trabajo de Configuración Visual I, con Prof. Perea."
+        description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
     },
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/coralia.webp",
         title: "Coralia",
-        description: "Trabajo de Configuración Visual I, con Prof. Otro."
+        description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
     }            
 ];
 
@@ -260,12 +260,13 @@ function setup() {
     otrxs.forEach((x)=>{
         document.querySelector("#otredad").innerHTML += `<div><a href="${x.cuenta}"><img src="${x.foto}" title="${x.esperado}"></a></div>`;
     });
+    
     //Copy-paste, y arreglín
     trabajitos.forEach((x)=>{
-        document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
+        document.querySelector("#portafolio").innerHTML += `<div> <img src="${x.photo}"> <h3>${x.title}</h3> <p>${x.description}</p> </div>`;
     });
 
-     document.querySelector("#autoria").innerHTML=yo.nombre;
+     document.querySelector("#autoria").innerHTML = yo.nombre;
     
     //Ahora vuelvo al p5.js
     noStroke();
