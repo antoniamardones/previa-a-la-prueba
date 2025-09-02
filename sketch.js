@@ -9,7 +9,7 @@ const trabajitos = [
         title: "Mandarine Coffee",
         description: "Trabajo de Proyecto II, con Prof. Paula Ron",
     },
-     {
+    {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
         title: "Invasión inversa",
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
@@ -18,9 +18,8 @@ const trabajitos = [
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/coralia.webp",
         title: "Coralia",
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
-    }            
+    },       
 ];
-
 const datos = [
     {
         id: 1,
