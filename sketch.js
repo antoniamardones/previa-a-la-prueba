@@ -9,10 +9,10 @@ const trabajitos = [
         title: "Mandarine Coffee",
         description: "Trabajo de Configuración Visual I, con Prof. Perea."
     },
-    {
-        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/invasioninversa.webp",
+     {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
         title: "Invasión inversa",
-        description: "Trabajo de Configuración Visual I, con Prof. Pradenas."
+        description: "Trabajo de Configuración Visual I, con Prof. Perea."
     },
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/coralia.webp",
@@ -274,7 +274,7 @@ function setup() {
 function draw() {
     background("white");
     orbitControl();
-    pointLight(255, 255, 255, valor / 3, valor / 2, 50);
+    pointLight(255, 255, 180, valor / 2, valor / 2, 50);
     specularMaterial(255);
     shininess(50);
     metalness(1);
