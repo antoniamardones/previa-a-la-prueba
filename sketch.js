@@ -20,7 +20,7 @@ const trabajitos = [
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
     }, 
     {
-        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/Infografíadvina.webp",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/Infografiadvina.webp",
         title: "Infografía D'vina",
         description: "Trabajo de Procesos y prototipos I, con Prof. Pamela Fuentes",
     }, 
