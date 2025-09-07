@@ -110,7 +110,7 @@ const datos = [
         foto: "https://ucampus.uchile.cl/d/r/usuario/03/0301c40d0e1a3db5fe1afe52abdc13f7/perfil/19b51bcccfc5bee67f278d4f9a9183d3.jpg",
         cuenta: "https://github.com/antoniamardones",
         nombre: "Antonia Mardones",
-        esperado: "espero aprender la mayoría de los diferentes programas que existen y ojala sin estresarme tanto.",
+        esperado: "espero aprender la mayoría de los diferentes programas que existen y ojalá sin estresarme tanto.",
     },
     {
         id: 14,
@@ -272,24 +272,108 @@ function setup() {
 }
 
 function draw() {
-    background("white");
+    background("MistyRose");
     orbitControl();
-    pointLight(255, 255, 180, valor / 2, valor / 2, 50);
-    specularMaterial(255);
-    shininess(50);
-    metalness(1);
 
-    // Add shapes.
+   // --- Luces ---
+    ambientLight(150); // menos iluminación ambiental
+    pointLight(255, 255, 255, valor / 1, valor / 1, 20);
+    directionalLight(80, 80, 80, -0.5, 1, -0.5);
+    shininess(100); // reflejos menos intensos
+
+    rotateY(0.2 * sin(frameCount * 0.01));
+    const r = 120;
+
+    // --- Cabeza ---
     push();
-    fill("purple");
-    translate(0, -valor / 4, -valor / 7);
-    sphere(valor / 4);
+    ambientMaterial(255, 220, 190);
+    sphere(r);
     pop();
+
+    // --- Mejillas ---
     push();
-    fill("purple");
-    sphere(valor / 5);
+    translate(-r * 0.5, r * 0.35, r * 0.7);
+    ambientMaterial(255, 150, 200);
+    sphere(r * 0.17);
     pop();
+
+    push();
+    translate(r * 0.5, r * 0.35, r * 0.7);
+    ambientMaterial(255, 150, 200);
+    sphere(r * 0.17);
+    pop();
+
+    // --- Gafas ---
+    push();
+    translate(-r * 0.45,  -r * 0.1, r * 1.0);
+    ambientMaterial(0, 0, 0);
+    torus(r * 0.35, r * 0.06, 36, 18);
+    pop();
+
+    push();
+    translate(r * 0.45, -r * 0.1, r * 1.0);
+    ambientMaterial(0, 0, 0);
+    torus(r * 0.35, r * 0.06, 36, 18);
+    pop();
+
+    // Puente de gafas
+    push();
+    translate(0, -r * 0.1 -r * 0.1, r * 1.0);
+    ambientMaterial(	0, 0, 0);
+    box(r * 0.25, r * 0.06, r * 0.06);
+    pop();
+
+    // --- Ojos ---
+    push();
+    translate(-r * 0.45, -r * 0.1, r * 0.95);
+    ambientMaterial(255);
+    sphere(r * 0.22);
+    translate(0, 0, r * 0.13);
+    ambientMaterial(0);
+    sphere(r * 0.13);
+    pop();
+
+    push();
+    translate(r * 0.45,  -r * 0.1, r * 0.95);
+    ambientMaterial(255);
+    sphere(r * 0.22);
+    translate(0, 0, r * 0.13);
+    ambientMaterial(0);
+    sphere(r * 0.13);
+    pop();
+
+    // --- Boca ---
+    push();
+    translate(0, r * 0.35, r * 0.7);  
+    rotateX(PI / 2 - 0.60);          
+    rotateY(0.07);                                     
+    ambientMaterial(30);              
+    torus(r * 0.32, r * 0.04, 36, 18); 
+    pop();
+
+    // --- Sombrero rosado ---
+    push();
+    translate(0, -r * 1.1, 0); // subido un poco más
+
+    // Copa del sombrero
+    ambientMaterial(199, 21, 133); // rosa
+    cylinder(r * 0.7, r * 0.7, 48, 1);
+
+    // Cinta blanca
+    push();
+    translate(0, r * 0.30, 0);
+    ambientMaterial(255);
+    cylinder(r * 0.72, r * 0.08, 48, 1);
+    pop();
+
+    // Ala del sombrero
+    translate(0, r * 0.4, 0);
+    cylinder(r * 1.2, r * 0.08, 48, 1);
+    pop();
+  
 }
+
+
 
 function windowResized() {
     resizeCanvas(valor, valor);
