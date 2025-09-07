@@ -2,7 +2,7 @@ const trabajitos = [
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/dvina.webp",
         title: "D'vina",
-        description: "Trabajo de Procesos y prototipos, con Prof. Pamela Fuentes",
+        description: "Trabajo de Procesos y prototipos I, con Prof. Pamela Fuentes",
     },
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
@@ -20,9 +20,9 @@ const trabajitos = [
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
     }, 
     {
-        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/ilustracion.webp",
-        title: "Ilustración",
-        description: "Ilustración para portada de libro",
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/Infografíadvina.webp",
+        title: "Infografía D'vina",
+        description: "Trabajo de Procesos y prototipos I, con Prof. Pamela Fuentes",
     }, 
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/logo.webp",
