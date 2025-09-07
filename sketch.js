@@ -5,20 +5,40 @@ const trabajitos = [
         description: "Trabajo de Procesos y prototipos, con Prof. Pamela Fuentes",
     },
     {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
+        title: "Invasión inversa",
+        description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
+    },
+        {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/cafetera2.webp",
         title: "Mandarine Coffee",
         description: "Trabajo de Proyecto II, con Prof. Paula Ron",
     },
     {
-        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/poster.webp",
-        title: "Invasión inversa",
-        description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
-    },
-    {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/coralia.webp",
         title: "Coralia",
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
-    },       
+    }, 
+    {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/ilustracion.webp",
+        title: "Ilustración",
+        description: "Ilustración para portada de libro",
+    }, 
+    {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/logo.webp",
+        title: "Logotipo y mockups",
+        description: "Trabajo de Proyecto II, con Prof. Paula Ron",
+    }, 
+    {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/metal.webp",
+        title: "Logotipo y mockups",
+        description: "Trabajo de Proyecto II, con Prof. Paula Ron",
+    }, 
+    {
+        photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/madera.webp",
+        title: "Logotipo y mockups",
+        description: "Trabajo de Proyecto II, con Prof. Paula Ron",
+    }, 
 ];
 const datos = [
     {
