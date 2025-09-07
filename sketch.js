@@ -31,13 +31,13 @@ const trabajitos = [
     }, 
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/metal.webp",
-        title: "Logotipo y mockups",
+        title: "Postal en metal",
         description: "Trabajo de Proyecto II, con Prof. Paula Ron",
     }, 
     {
         photo: "https://antoniamardones.github.io/previa-a-la-prueba/img/madera.webp",
-        title: "Logotipo y mockups",
-        description: "Trabajo de Proyecto II, con Prof. Paula Ron",
+        title: "Conceptualización para pieza de ajedrez",
+        description: "Trabajo de Proyecto I, con Prof. Paula Ron",
     }, 
 ];
 const datos = [
